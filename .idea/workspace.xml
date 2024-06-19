@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9bffcfa0-2010-47b9-a6ff-321036c74c81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/mybatisplus/MybatisPlusConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/AdminWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/config/Knife4jConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\HouDuan\javaweb\day04-MavenAndMyBatis\day04-1-Maven\ziliao\1.MavenAnZhuangBao\apache-maven-3.6.1-bin\apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\HouDuan\javaweb\day04-MavenAndMyBatis\day04-1-Maven\ziliao\1.MavenAnZhuangBao\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2i5dAwOsyyhmohkTwwg4l70eFhf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="web-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tyz.AdminWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-f644763e9732-f719d367" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bffcfa0-2010-47b9-a6ff-321036c74c81" name="Changes" comment="" />
+      <created>1718784233865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718784233865</updated>
+      <workItem from="1718784234953" duration="1105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
