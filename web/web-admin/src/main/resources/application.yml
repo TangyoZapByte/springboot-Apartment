@@ -17,5 +17,19 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: flag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 server:
   port: 8080
+
+springdoc:
+  default-flat-param-object: true
+
+minio:
+  endpoint: http://192.168.20.128:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: apartment

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tyz.web.admin.mapper.AttrKeyMapper">
+
+    <select id="listAttrInfo" resultType="com.tyz.web.admin.vo.attr.AttrKeyVo">
+        select k.id,
+               k.name        key_name,
+               v.id          value_id,
+               v.name        value_name,
+               v.attr_key_id key_id
+        from attr_key k
+                 left join attr_value v on k.id = v.attr_key_id and v.is_deleted = 0
+        where k.is_deleted = 0
+    </select>
+</mapper>

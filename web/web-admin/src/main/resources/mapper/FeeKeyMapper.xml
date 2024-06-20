@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tyz.web.admin.mapper.FeeKeyMapper">
+
+    <select id="listFeeInfo" resultType="com.tyz.web.admin.vo.fee.FeeKeyVo">
+        select k.id,
+               k.name       key_name,
+               v.id         value_id,
+               v.name       value_name,
+               v.unit       value_unit,
+               v.fee_key_id key_id
+        from fee_key k
+                 left join fee_value v on k.id = v.fee_key_id and v.is_deleted = 0
+        where k.is_deleted = 0
+    </select>
+</mapper>
