@@ -1,9 +1,9 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://<hostname>:<port>/<database>?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
-    username: <username>
-    password: <password>
+    url: jdbc:mysql://192.168.20.128:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
+    username: root
+    password: Tangyizuo.123
     hikari:
       connection-test-query: SELECT 1 # 自动检测连接
       connection-timeout: 60000 #数据库连接超时时间,默认30秒
@@ -12,6 +12,15 @@ spring:
       maximum-pool-size: 12 #连接池最大连接数，默认是10
       minimum-idle: 10 #最小空闲连接数量
       pool-name: SPHHikariPool # 连接池名称
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  data:
+    redis:
+      host: 192.168.20.128
+      port: 6379
+      database: 0
+      password: 123321
 
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:
@@ -19,6 +28,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:
+      update-strategy: not_empty
       logic-delete-field: flag
       logic-delete-value: 1
       logic-not-delete-value: 0
@@ -33,3 +43,4 @@ minio:
   access-key: minioadmin
   secret-key: minioadmin
   bucket-name: apartment
+

@@ -1,5 +1,6 @@
 package com.tyz.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.tyz.model.enums.AppointmentStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -33,6 +34,7 @@ public class ViewAppointment extends BaseEntity {
 
     @Schema(description = "预约时间")
     @TableField(value = "appointment_time")
+//    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date appointmentTime;
 
     @Schema(description = "备注信息")

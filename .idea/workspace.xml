@@ -5,213 +5,205 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bffcfa0-2010-47b9-a6ff-321036c74c81" name="Changes" comment="分模块的公寓项目">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/minio/MinioConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/minio/MinioProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/ResultCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ApartmentFacility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ApartmentFeeValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ApartmentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ApartmentLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/AttrKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/AttrValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/BrowsingHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/CityInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/DistrictInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/FacilityInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/FeeKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/FeeValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/GraphInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/LabelInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/LeaseAgreement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/LeaseTerm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/PaymentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ProvinceInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomAttrValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomFacility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomLeaseTerm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/RoomPaymentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/SystemPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/SystemUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ViewAppointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/AppointmentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/BaseEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/BaseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/ItemType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/LeaseSourceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/LeaseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/ReleaseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/enums/SystemUserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/ApartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/AttrController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/FacilityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/FeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/LabelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/LeaseTermController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/PaymentTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/RegionInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/LeaseAgreementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/ViewAppointmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemPostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/user/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/converter/StringToBaseEnumConverterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/converter/StringToItemTypeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ApartmentFacilityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ApartmentFeeValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ApartmentInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ApartmentLabelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/AttrKeyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/AttrValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/BrowsingHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/CityInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/DistrictInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/FacilityInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/FeeKeyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/FeeValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/GraphInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LabelInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseAgreementMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseTermMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/PaymentTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ProvinceInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomAttrValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomFacilityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomLabelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomLeaseTermMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomPaymentTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/SystemPostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/SystemUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ViewAppointmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ApartmentFacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ApartmentFeeValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ApartmentInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ApartmentLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/AttrKeyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/AttrValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/BrowsingHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/CityInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/DistrictInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/FacilityInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/FeeKeyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/FeeValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/GraphInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LabelInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LeaseAgreementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LeaseTermService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/PaymentTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ProvinceInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomAttrValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomFacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomLeaseTermService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomPaymentTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/SystemPostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/SystemUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ViewAppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentFacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentFeeValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentLabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/AttrKeyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/AttrValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/CityInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/DistrictInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/FacilityInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/FeeKeyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/FeeValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/GraphInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LabelInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LeaseTermServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/PaymentTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ProvinceInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomAttrValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomFacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomLabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomLeaseTermServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomPaymentTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/SystemPostServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/SystemUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ViewAppointmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/agreement/AgreementQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/agreement/AgreementVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/apartment/ApartmentDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/apartment/ApartmentItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/apartment/ApartmentQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/apartment/ApartmentSubmitVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/appointment/AppointmentQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/appointment/AppointmentVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/attr/AttrKeyVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/attr/AttrValueVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/fee/FeeKeyVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/fee/FeeValueVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/graph/GraphVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/login/CaptchaVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/login/LoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/room/RoomDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/room/RoomItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/room/RoomQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/room/RoomSubmitVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/system/user/SystemUserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/system/user/SystemUserItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/system/user/SystemUserQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/vo/user/UserInfoQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ApartmentFacilityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ApartmentFeeValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ApartmentInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ApartmentLabelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrKeyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/BrowsingHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/DistrictInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FacilityInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FeeKeyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FeeValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/GraphInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LabelInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseTermMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/PaymentTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ProvinceInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomAttrValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomFacilityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomLabelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomLeaseTermMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomPaymentTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/constant/RedisConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/exception/LeaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/login/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/login/LoginUserHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/sys/AliyunSMSConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/sys/AliyunSMSProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/utils/VerifyCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/interceptor/AuthenticationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/schedule/ScheduledTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/AppWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/agreement/LeaseAgreementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/apartment/ApartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/appointment/ViewAppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/history/BrowsingHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/leasaterm/LeaseTermController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/login/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/payment/PaymentTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/region/RegionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/controller/room/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/custom/config/Knife4jConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/custom/config/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/custom/interceptor/AuthenticationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ApartmentFacilityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ApartmentFeeValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ApartmentInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ApartmentLabelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/AttrKeyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/AttrValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/BrowsingHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/CityInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/DistrictInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/FacilityInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/FeeKeyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/FeeValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/GraphInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/LabelInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/LeaseAgreementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/LeaseTermMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/PaymentTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ProvinceInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomAttrValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomFacilityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomLabelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomLeaseTermMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/RoomPaymentTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/mapper/ViewAppointmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ApartmentFacilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ApartmentFeeValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ApartmentInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ApartmentLabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/AttrKeyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/AttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/BrowsingHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/CityInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/DistrictInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/FacilityInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/FeeKeyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/FeeValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/GraphInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/LabelInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/LeaseAgreementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/LeaseTermService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/PaymentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ProvinceInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomFacilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomLabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomLeaseTermService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/RoomPaymentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/UserInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/ViewAppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ApartmentFacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ApartmentFeeValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ApartmentInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ApartmentLabelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/AttrKeyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/AttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/CityInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/DistrictInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/FacilityInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/FeeKeyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/FeeValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/GraphInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/LabelInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/LeaseTermServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/PaymentTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ProvinceInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomFacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomLabelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomLeaseTermServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/RoomPaymentTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/SmsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/service/impl/ViewAppointmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/agreement/AgreementDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/agreement/AgreementItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/apartment/ApartmentDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/apartment/ApartmentItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/appointment/AppointmentDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/appointment/AppointmentItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/attr/AttrKeyVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/attr/AttrValueVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/fee/FeeKeyVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/fee/FeeValueVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/graph/GraphVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/history/HistoryItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/room/RoomDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/room/RoomItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/room/RoomQueryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/user/LoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/user/UserInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/tyz/web/app/vo/user/UserSubmitVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ApartmentFacilityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ApartmentFeeValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ApartmentInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ApartmentLabelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/AttrKeyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/AttrValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/DistrictInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/FacilityInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/FeeKeyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/FeeValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/GraphInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/LabelInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/LeaseTermMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/PaymentTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ProvinceInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomAttrValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomFacilityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomLabelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomLeaseTermMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/RoomPaymentTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/web-app/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/mybatisplus/MybatisPlusConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/mybatisplus/MybatisPlusConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/minio/MinioConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/minio/MinioConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/tyz/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/SystemUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/SystemUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ViewAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/tyz/model/entity/ViewAppointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/AdminWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/ApartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/ApartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/apartment/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/LeaseAgreementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/ViewAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/lease/ViewAppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/system/SystemUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/user/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/controller/user/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/custom/config/WebMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/AttrValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/AttrValueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/FacilityInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/FacilityInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LabelInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LabelInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseAgreementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseAgreementMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseTermMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/LeaseTermMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/PaymentTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/PaymentTypeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/RoomInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/SystemUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/SystemUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ViewAppointmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/mapper/ViewAppointmentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LeaseAgreementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/RoomInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/SystemUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/SystemUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ViewAppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/ViewAppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ApartmentInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/RoomInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/SystemUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/SystemUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ViewAppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/java/com/tyz/web/admin/service/impl/ViewAppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FacilityInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FacilityInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LabelInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LabelInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseAgreementMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseTermMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/LeaseTermMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/PaymentTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/PaymentTypeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/RoomInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +214,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -248,37 +241,40 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AdminWebApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IDEA/IDEAFILES/UtilsAndProjects/springboot-system/apartment/common/src/main/java/com/tyz/common&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AdminWebApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IDEA/IDEAFILES/UtilsAndProjects/springboot-system/apartment/web/web-app/src/main/java/com/tyz/web/app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tyz.web.app.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-app\src\main\java\com\tyz\web\app" />
+      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-app\src\main\java\com\tyz\web\app\service" />
+      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-app\src\main\resources" />
       <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\common\src\main\java\com\tyz\common" />
       <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-admin\src\main\java\com\tyz\web\admin" />
-      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-admin\src\main\java\com\tyz\web\admin\service\impl" />
-      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-admin\src\main\java\com\tyz\web\admin\service" />
-      <recent name="D:\IDEA\IDEAFILES\UtilsAndProjects\springboot-system\apartment\web\web-admin\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -310,7 +306,8 @@
       <workItem from="1718845325134" duration="9468000" />
       <workItem from="1718872916404" duration="40000" />
       <workItem from="1718873700746" duration="5219000" />
-      <workItem from="1718886119541" duration="3957000" />
+      <workItem from="1718886119541" duration="4736000" />
+      <workItem from="1718931622690" duration="17400000" />
     </task>
     <task id="LOCAL-00001" summary="分模块的公寓项目">
       <option name="closed" value="true" />
@@ -336,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718785766087</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="分模块的公寓项目">
+      <option name="closed" value="true" />
+      <created>1718890176265</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718890176265</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,7 @@
 package com.tyz.web.admin.mapper;
 
 import com.tyz.model.entity.RoomInfo;
+import com.tyz.web.admin.vo.room.RoomDetailVo;
 import com.tyz.web.admin.vo.room.RoomItemVo;
 import com.tyz.web.admin.vo.room.RoomQueryVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -13,6 +14,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 * @Entity com.atguigu.lease.model.RoomInfo
 */
 public interface RoomInfoMapper extends BaseMapper<RoomInfo> {
+
+    IPage<RoomItemVo> pageRoomItemByQuery(IPage<RoomItemVo> page, RoomQueryVo queryVo);
 
 }
 

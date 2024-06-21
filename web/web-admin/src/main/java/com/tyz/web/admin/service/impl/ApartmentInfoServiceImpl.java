@@ -2,8 +2,10 @@ package com.tyz.web.admin.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.tyz.common.exception.LeaseException;
 import com.tyz.model.entity.*;
 import com.tyz.model.enums.ItemType;
+import com.tyz.common.result.ResultCodeEnum;
 import com.tyz.web.admin.mapper.*;
 import com.tyz.web.admin.service.*;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -13,7 +15,6 @@ import com.tyz.web.admin.vo.apartment.ApartmentQueryVo;
 import com.tyz.web.admin.vo.apartment.ApartmentSubmitVo;
 import com.tyz.web.admin.vo.fee.FeeValueVo;
 import com.tyz.web.admin.vo.graph.GraphVo;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -175,6 +176,14 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
 
     @Override
     public void removeApartmentById(Long id) {
+
+        LambdaQueryWrapper<RoomInfo> roomQueryWrapper = new LambdaQueryWrapper<>();
+        roomQueryWrapper.eq(RoomInfo::getApartmentId, id);
+        Long count = roomInfoMapper.selectCount(roomQueryWrapper);
+        if (count > 0) {
+            throw new LeaseException(ResultCodeEnum.ADMIN_APARTMENT_DELETE_ERROR);
+        }
+
         super.removeById(id);
 
 

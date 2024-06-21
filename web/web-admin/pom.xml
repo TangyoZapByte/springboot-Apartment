@@ -29,6 +29,15 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.github.whvcse</groupId>-->
+<!--            <artifactId>easy-captcha</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

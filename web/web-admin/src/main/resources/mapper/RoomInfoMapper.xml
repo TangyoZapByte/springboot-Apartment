@@ -4,4 +4,51 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tyz.web.admin.mapper.RoomInfoMapper">
 
+    <select id="pageRoomItemByQuery" resultType="com.tyz.web.admin.vo.room.RoomItemVo">
+        select ri.id,
+        ri.room_number,
+        ri.rent,
+        ri.apartment_id,
+        ri.is_release,
+        la.room_id is not null is_check_in,
+        la.lease_end_date,
+        ai.id                  apart_id,
+        ai.name,
+        ai.introduction,
+        ai.district_id,
+        ai.district_name,
+        ai.city_id,
+        ai.city_name,
+        ai.province_id,
+        ai.province_name,
+        ai.address_detail,
+        ai.latitude,
+        ai.longitude,
+        ai.phone,
+        ai.is_release          apart_is_release
+        from room_info ri
+        left join lease_agreement la
+        on ri.id = la.room_id
+        and la.is_deleted = 0
+        and la.status in (2,5)
+        left join apartment_info ai
+        on ri.apartment_id = ai.id
+        and ai.is_deleted = 0
+        <where>
+            ri.is_deleted = 0
+            <if test="queryVo.provinceId != null">
+                apart.province_id = #{queryVo.provinceId}
+            </if>
+            <if test="queryVo.cityId != null">
+                and apart.city_id = #{queryVo.cityId}
+            </if>
+            <if test="queryVo.districtId != null">
+                and apart.district_id = #{queryVo.districtId}
+            </if>
+            <if test="queryVo.apartmentId != null">
+                and apartment_id = #{queryVo.apartmentId}
+            </if>
+        </where>
+    </select>
+
 </mapper>
