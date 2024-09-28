@@ -38,7 +38,7 @@ public class ApartmentController {
     @Operation(summary = "根据条件分页查询公寓列表")
     @GetMapping("pageItem")
     public Result<IPage<ApartmentItemVo>> pageItem(@RequestParam long current, @RequestParam long size, ApartmentQueryVo queryVo) {
-        IPage<ApartmentItemVo> page = new Page<>(current,size);
+        IPage<ApartmentItemVo> page = new Page<>(current, size);
         IPage<ApartmentItemVo> list = apartmentInfoService.pageApartmentItemByQuery(page, queryVo);
         return Result.ok(list);
     }
@@ -46,8 +46,8 @@ public class ApartmentController {
     @Operation(summary = "根据ID获取公寓详细信息")
     @GetMapping("getDetailById")
     public Result<ApartmentDetailVo> getDetailById(@RequestParam Long id) {
-        ApartmentDetailVo apartmentDetailVo = apartmentInfoService.getApartmentDetailById(id);
-        return Result.ok(apartmentDetailVo);
+        ApartmentDetailVo apartmentInfo = apartmentInfoService.getApartmentDetailById(id);
+        return Result.ok(apartmentInfo);
     }
 
     @Operation(summary = "根据id删除公寓信息")
@@ -61,6 +61,7 @@ public class ApartmentController {
     @PostMapping("updateReleaseStatusById")
     public Result updateReleaseStatusById(@RequestParam Long id, @RequestParam ReleaseStatus status) {
 
+
         LambdaUpdateWrapper<ApartmentInfo> updateWrapper = new LambdaUpdateWrapper<>();
         updateWrapper.eq(ApartmentInfo::getId,id);
         updateWrapper.set(ApartmentInfo::getIsRelease,status);
@@ -73,9 +74,8 @@ public class ApartmentController {
     @GetMapping("listInfoByDistrictId")
     public Result<List<ApartmentInfo>> listInfoByDistrictId(@RequestParam Long id) {
         LambdaQueryWrapper<ApartmentInfo> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(ApartmentInfo::getId,id);
+        queryWrapper.eq(ApartmentInfo::getDistrictId, id);
         List<ApartmentInfo> list = apartmentInfoService.list(queryWrapper);
-
         return Result.ok(list);
     }
 }

@@ -2,6 +2,7 @@ package com.tyz.web.admin.controller.apartment;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.tyz.common.result.Result;
 import com.tyz.model.entity.LabelInfo;
 import com.tyz.model.enums.ItemType;
@@ -26,13 +27,14 @@ public class LabelController {
         LambdaQueryWrapper<LabelInfo> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(type != null,LabelInfo::getType,type);
         List<LabelInfo> list = labelInfoService.list(queryWrapper);
-        return Result.ok();
+        return Result.ok(list);
     }
 
     @Operation(summary = "新增或修改标签信息")
     @PostMapping("saveOrUpdate1")
     public Result saveOrUpdateLabel(@RequestBody LabelInfo labelInfo) {
-
+//        LambdaUpdateWrapper<LabelInfo> updateWrapper = new LambdaUpdateWrapper<>();
+//        updateWrapper.eq()
         return Result.ok();
     }
 
@@ -46,6 +48,7 @@ public class LabelController {
     @Operation(summary = "根据id删除标签信息")
     @DeleteMapping("deleteById")
     public Result deleteLabelById(@RequestParam Long id) {
+        labelInfoService.removeById(id);
         return Result.ok();
     }
 }

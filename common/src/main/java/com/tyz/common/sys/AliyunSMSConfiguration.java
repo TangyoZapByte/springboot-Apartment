@@ -1,6 +1,7 @@
 package com.tyz.common.sys;
 
-import com.aliyun.teaopenapi.Client;
+
+import com.aliyun.dysmsapi20170525.Client;
 import com.aliyun.teaopenapi.models.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -16,8 +17,21 @@ public class AliyunSMSConfiguration {
     @Autowired
     private AliyunSMSProperties properties;
 
+//    @Bean
+//    public Client smsClient() {
+//        Config config = new Config();
+//        config.setAccessKeyId(properties.getAccessKeyId());
+//        config.setAccessKeySecret(properties.getAccessKeySecret());
+//        config.setEndpoint(properties.getEndpoint());
+//        try {
+//            return new Client(config);
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//    }
     @Bean
-    public Client smsClient() {
+    public Client smsClient(AliyunSMSProperties properties) {
         Config config = new Config();
         config.setAccessKeyId(properties.getAccessKeyId());
         config.setAccessKeySecret(properties.getAccessKeySecret());
@@ -27,6 +41,5 @@ public class AliyunSMSConfiguration {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
     }
 }

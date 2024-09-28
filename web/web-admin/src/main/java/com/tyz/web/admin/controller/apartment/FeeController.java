@@ -8,7 +8,6 @@ import com.tyz.model.entity.FeeValue;
 import com.tyz.web.admin.service.FeeKeyService;
 import com.tyz.web.admin.service.FeeValueService;
 import com.tyz.web.admin.vo.fee.FeeKeyVo;
-import com.tyz.web.admin.vo.fee.FeeValueVo;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +45,7 @@ public class FeeController {
     @GetMapping("list")
     public Result<List<FeeKeyVo>> feeInfoList() {
         List<FeeKeyVo> list = feeKeyService.listFeeInfo();
-        return Result.ok();
+        return Result.ok(list);
     }
 
     @Operation(summary = "根据id删除杂费名称")

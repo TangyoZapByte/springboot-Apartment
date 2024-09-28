@@ -4,4 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tyz.web.app.mapper.ViewAppointmentMapper">
 
+    <select id="listItemByUserId" resultType="com.tyz.web.app.vo.appointment.AppointmentItemVo">
+        select va.id,
+               va.appointment_time,
+               va.appointment_status,
+               ai.name apartment_name,
+               gi.name,
+               gi.url
+        from view_appointment va
+                 left join apartment_info ai on va.apartment_id = ai.id and ai.is_deleted = 0
+                 left join graph_info gi on gi.item_type = 1 and gi.item_id = ai.id and gi.is_deleted = 0
+        where va.is_deleted = 0
+          and va.user_id = #{userId}
+        order by va.create_time desc
+    </select>
 </mapper>

@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://192.168.20.128:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
+    url: jdbc:mysql://192.168.20.129:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
     username: root
-    password: Tangyizuo.123
+    password: root
     hikari:
       connection-test-query: SELECT 1 # 自动检测连接
       connection-timeout: 60000 #数据库连接超时时间,默认30秒
@@ -17,12 +17,13 @@ spring:
       pool-name: SPHHikariPool # 连接池名称
   jackson:
     time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
   data:
     redis:
-      host: 192.168.10.101
+      host: 192.168.20.129
       port: 6379
       database: 0
-      password: 123321
+      password:
 
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:
@@ -32,7 +33,13 @@ springdoc:
   default-flat-param-object: true
 aliyun:
   sms:
-    access-key-id: <access-key-id>
-    access-key-secret: <access-key-secret>
+    access-key-id: LTAI5tGdZuN9SkjMUHAutMgA
+    access-key-secret: NaGUgveCNJn76u5RGVgyytYsWNaMRa
     endpoint: dysmsapi.aliyuncs.com
+
+minio:
+  endpoint: http://192.168.20.129:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: lease
 

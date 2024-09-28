@@ -1,5 +1,6 @@
 package com.tyz.web.admin.custom.config;
 
+import com.tyz.web.admin.custom.converter.StringToBaseEnumConverterFactory;
 import com.tyz.web.admin.custom.converter.StringToItemTypeConverter;
 import com.tyz.web.admin.custom.interceptor.AuthenticationInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,20 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     @Autowired
     private AuthenticationInterceptor authenticationInterceptor;
 
+    @Autowired
+    private StringToBaseEnumConverterFactory stringToBaseEnumConverterFactory;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(this.authenticationInterceptor).addPathPatterns("/admin/**").excludePathPatterns("/admin/login/**");
     }
     @Override
     public void addFormatters(FormatterRegistry registry) {
-        registry.addConverter(this.stringToItemTypeConverter);
+//        registry.addConverter(this.stringToItemTypeConverter);
+        registry.addConverterFactory(this.stringToBaseEnumConverterFactory);
     }
+//    @Override
+//    public void addFormatters(FormatterRegistry registry) {
+//
+//    }
 }

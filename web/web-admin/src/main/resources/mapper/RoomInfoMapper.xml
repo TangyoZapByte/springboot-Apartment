@@ -4,7 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tyz.web.admin.mapper.RoomInfoMapper">
 
-    <select id="pageRoomItemByQuery" resultType="com.tyz.web.admin.vo.room.RoomItemVo">
+    <resultMap id="RoomItemVoMap" type="com.tyz.web.admin.vo.room.RoomItemVo" autoMapping="true">
+        <id property="id" column="id"/>
+        <association property="apartmentInfo" javaType="com.tyz.model.entity.ApartmentInfo" autoMapping="true">
+            <id property="id" column="apart_id"/>
+            <result property="isRelease" column="apart_is_release"/>
+        </association>
+    </resultMap>
+
+    <select id="pageRoomItemByQuery" resultMap="RoomItemVoMap">
         select ri.id,
         ri.room_number,
         ri.rent,
@@ -37,13 +45,13 @@
         <where>
             ri.is_deleted = 0
             <if test="queryVo.provinceId != null">
-                apart.province_id = #{queryVo.provinceId}
+                and ai.province_id = #{queryVo.provinceId}
             </if>
             <if test="queryVo.cityId != null">
-                and apart.city_id = #{queryVo.cityId}
+                and ai.city_id = #{queryVo.cityId}
             </if>
             <if test="queryVo.districtId != null">
-                and apart.district_id = #{queryVo.districtId}
+                and ai.district_id = #{queryVo.districtId}
             </if>
             <if test="queryVo.apartmentId != null">
                 and apartment_id = #{queryVo.apartmentId}

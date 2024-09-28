@@ -9,6 +9,7 @@ import lombok.Data;
 @Schema(description = "公寓信息表")
 @TableName(value = "apartment_info")
 @Data
+
 public class ApartmentInfo extends BaseEntity {
 
     private static final long serialVersionUID = 1L;

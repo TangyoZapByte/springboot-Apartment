@@ -4,7 +4,10 @@ import com.tyz.model.entity.PaymentType;
 import com.tyz.web.app.mapper.PaymentTypeMapper;
 import com.tyz.web.app.service.PaymentTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -14,7 +17,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentTypeServiceImpl extends ServiceImpl<PaymentTypeMapper, PaymentType>
     implements PaymentTypeService{
+    @Autowired
+    private PaymentTypeMapper paymentTypeMapper;
 
+    @Override
+    public List<PaymentType> listByRoomId(Long id) {
+        return paymentTypeMapper.selectListByRoomId(id);
+    }
 }
 
 

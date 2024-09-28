@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.tyz.common.exception.LeaseException;
 import com.tyz.model.entity.*;
-import com.tyz.model.enums.ItemType;
 import com.tyz.common.result.ResultCodeEnum;
+import com.tyz.model.enums.ItemType;
 import com.tyz.web.admin.mapper.*;
 import com.tyz.web.admin.service.*;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -113,7 +113,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
         //3.插入标签列表
         List<Long> labelIds = apartmentSubmitVo.getLabelIds();
         if (!CollectionUtils.isEmpty(labelIds)) {
-            List<ApartmentLabel> apartmentLabelList = new ArrayList<>();
+            ArrayList<ApartmentLabel> apartmentLabelList = new ArrayList<>();
             for (Long labelId : labelIds) {
                 ApartmentLabel apartmentLabel = new ApartmentLabel();
                 apartmentLabel.setApartmentId(apartmentSubmitVo.getId());
@@ -147,7 +147,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
     public ApartmentDetailVo getApartmentDetailById(Long id) {
         //1.查询ApartmentInfo
         ApartmentInfo apartmentInfo = this.getById(id);
-        if(apartmentInfo == null){
+        if (apartmentInfo == null) {
             return null;
         }
 

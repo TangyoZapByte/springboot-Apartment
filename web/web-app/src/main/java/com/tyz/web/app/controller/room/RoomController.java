@@ -27,7 +27,7 @@ public class RoomController {
     @GetMapping("pageItem")
     public Result<IPage<RoomItemVo>> pageItem(@RequestParam long current, @RequestParam long size, RoomQueryVo queryVo) {
         Page<RoomItemVo> page = new Page<>(current, size);
-        IPage<RoomItemVo> list = roomInfoService.pageRoomItemByQuery(page, queryVo);
+        IPage<RoomItemVo> list = roomInfoService.pageItem(page, queryVo);
         return Result.ok(list);
     }
 
@@ -41,6 +41,8 @@ public class RoomController {
     @Operation(summary = "根据公寓id分页查询房间列表")
     @GetMapping("pageItemByApartmentId")
     public Result<IPage<RoomItemVo>> pageItemByApartmentId(@RequestParam long current, @RequestParam long size, @RequestParam Long id) {
-        return Result.ok();
+        IPage<RoomItemVo> page = new Page<>(current, size);
+        IPage<RoomItemVo> result = roomInfoService.pageItemByApartmentId(page, id);
+        return Result.ok(result);
     }
 }

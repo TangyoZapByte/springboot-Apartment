@@ -14,7 +14,11 @@ import com.tyz.web.app.vo.room.RoomQueryVo;
 * @createDate 2023-07-26 11:12:39
 */
 public interface RoomInfoService extends IService<RoomInfo> {
-    IPage<RoomItemVo> pageRoomItemByQuery(Page<RoomItemVo> page, RoomQueryVo queryVo);
+//    IPage<RoomItemVo> pageRoomItemByQuery(Page<RoomItemVo> page, RoomQueryVo queryVo);
 
     RoomDetailVo getDetailById(Long id);
+
+    IPage<RoomItemVo> pageItemByApartmentId(IPage<RoomItemVo> page, Long id);
+
+    IPage<RoomItemVo> pageItem(Page<RoomItemVo> page, RoomQueryVo queryVo);
 }

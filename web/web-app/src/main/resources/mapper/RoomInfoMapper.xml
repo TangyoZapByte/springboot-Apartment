@@ -4,7 +4,24 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.tyz.web.app.mapper.RoomInfoMapper">
 
-    <select id="pageRoomItemByQuery" resultType="com.tyz.web.app.vo.room.RoomItemVo">
+    <!-- result map -->
+    <resultMap id="RoomItemVoMap" type="com.tyz.web.app.vo.room.RoomItemVo" autoMapping="true">
+        <id column="id" property="id"/>
+        <!--映射公寓信息-->
+        <association property="apartmentInfo" javaType="com.tyz.model.entity.ApartmentInfo"
+                     autoMapping="true">
+            <id column="id" property="id"/>
+        </association>
+        <!--映射图片列表-->
+        <collection property="graphVoList" ofType="com.tyz.web.app.vo.graph.GraphVo"
+                    select="selectGraphVoListByRoomId" column="id"/>
+        <!--映射标签列表-->
+        <collection property="labelInfoList" ofType="com.tyz.model.entity.LabelInfo"
+                    select="selectLabelInfoListByRoomId" column="id"/>
+    </resultMap>
+
+    <!-- 根据条件查询房间列表 -->
+    <select id="pageItem" resultMap="RoomItemVoMap">
         select
         ri.id,
         ri.room_number,
@@ -58,5 +75,67 @@
         <if test="queryVo.orderType == 'desc' or queryVo.orderType == 'asc'">
             order by ri.rent ${queryVo.orderType}
         </if>
+    </select>
+
+    <!-- 根据房间ID查询图片列表 -->
+    <select id="selectGraphVoListByRoomId" resultType="com.tyz.web.app.vo.graph.GraphVo">
+        select id,
+               name,
+               item_type,
+               item_id,
+               url
+        from graph_info
+        where is_deleted = 0
+          and item_type = 2
+          and item_id = #{id}
+    </select>
+
+    <!-- 根据公寓ID查询标签列表 -->
+    <select id="selectLabelInfoListByRoomId" resultType="com.tyz.model.entity.LabelInfo">
+        select id,
+               type,
+               name
+        from label_info
+        where is_deleted = 0
+          and id in (select label_id
+                     from room_label
+                     where is_deleted = 0
+                       and room_id = #{id})
+    </select>
+
+    <select id="selectMinRentByApartmentId" resultType="java.math.BigDecimal">
+        select min(rent)
+        from room_info
+        where is_deleted = 0
+          and is_release = 1
+          and apartment_id = #{id}
+    </select>
+    <select id="pageItemByApartmentId" resultType="com.tyz.web.app.vo.room.RoomItemVo">
+        select ri.id,
+               ri.room_number,
+               ri.rent,
+               ai.id apartment_id,
+               ai.name,
+               ai.introduction,
+               ai.district_id,
+               ai.district_name,
+               ai.city_id,
+               ai.city_name,
+               ai.province_id,
+               ai.province_name,
+               ai.address_detail,
+               ai.latitude,
+               ai.longitude,
+               ai.phone,
+               ai.is_release
+        from room_info ri
+                 left join apartment_info ai on ri.apartment_id = ai.id and ai.is_deleted = 0
+        where ri.is_deleted = 0
+          and ri.is_release = 1
+          and ai.id = #{id}
+          and ri.id not in (select room_id
+                            from lease_agreement
+                            where is_deleted = 0
+                              and status in (2, 5))
     </select>
 </mapper>

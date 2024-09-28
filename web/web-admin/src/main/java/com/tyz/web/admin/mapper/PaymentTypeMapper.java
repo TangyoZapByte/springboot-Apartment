@@ -9,7 +9,7 @@ import java.util.List;
  * @author liubo
  * @description 针对表【payment_type(支付方式表)】的数据库操作Mapper
  * @createDate 2023-07-24 15:48:00
- * @Entity com.atguigu.lease.model.PaymentType
+ * @Entity com.tyz.model.PaymentType
  */
 public interface PaymentTypeMapper extends BaseMapper<PaymentType> {
 

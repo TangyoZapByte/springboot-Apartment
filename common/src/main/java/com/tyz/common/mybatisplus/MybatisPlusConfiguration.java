@@ -12,7 +12,8 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Date;
 
 @Configuration
-@MapperScan("com.tyz.web.admin.mapper")
+@MapperScan({"com.tyz.web.admin.mapper","com.tyz.web.app.mapper"})
+//@MapperScan({"com.tyz"})
 public class MybatisPlusConfiguration implements MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {

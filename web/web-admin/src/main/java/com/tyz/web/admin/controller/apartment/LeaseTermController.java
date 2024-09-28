@@ -22,7 +22,7 @@ public class LeaseTermController {
     @Operation(summary = "查询全部租期列表")
     public Result<List<LeaseTerm>> listLeaseTerm() {
         List<LeaseTerm> list = leaseTermService.list();
-        return Result.ok();
+        return Result.ok(list);
     }
 
     @PostMapping("saveOrUpdate")
