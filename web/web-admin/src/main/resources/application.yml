@@ -1,9 +1,9 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://192.168.20.129:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
+    url: jdbc:mysql://123.249.93.59:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
     username: root
-    password: root
+    password: Tangyizuo.123
     hikari:
       connection-test-query: SELECT 1 # 自动检测连接
       connection-timeout: 60000 #数据库连接超时时间,默认30秒
@@ -17,10 +17,10 @@ spring:
     time-zone: GMT+8
   data:
     redis:
-      host: 192.168.20.129
+      host: 123.249.93.59
       port: 6379
       database: 0
-      password:
+      password: 123321
 
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:
@@ -39,7 +39,7 @@ springdoc:
   default-flat-param-object: true
 
 minio:
-  endpoint: http://192.168.20.129:9000
+  endpoint: http://123.249.93.59:9000
   access-key: minioadmin
   secret-key: minioadmin
   bucket-name: lease
